@@ -48,12 +48,14 @@ class MyApp extends StatelessWidget {
                 },
                 child: Container(
                   decoration: BoxDecoration(
+                    image: const DecorationImage(
+                        image: AssetImage('lib/images/mesa_v.png')),
                     color: Colors.blueAccent,
                     border: Border.all(width: 3.0),
                     borderRadius: const BorderRadius.all(Radius.circular(10)),
                   ),
                   child: Center(
-                    child: Text('$n', style: const TextStyle(fontSize: 30.0)),
+                    child: Text('$n', style: const TextStyle(fontSize: 20.0)),
                   ),
                 ),
               );
